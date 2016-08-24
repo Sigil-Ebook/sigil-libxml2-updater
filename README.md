@@ -2,6 +2,8 @@
 
 This is an executable **Linux-only** "updater" that installs a patched version of libxml2 into a Sigil installation. It addresses a bug in libxml2-2.9.3 and higher that affects how QtWebKit renders html entities.
 
+Type a visible html entity into Sigil's Code View. If it appear twice in Sigl's Preview or Book View, then you have the buggy version of libxml2.
+
 #Creating the installer
 To build the updater, you must have [makeself](https://github.com/megastep/makeself/releases/latest) installed (and on in your PATH).
 
@@ -32,6 +34,8 @@ For those familiar with makeself.sh, there are several arguments you can pass to
 + --list : List the files in the archive.
 
 + --check : Check the archive for integrity using the embedded checksums. Does not extract the archive.
+
++ --keep : Prevent the files to be extracted in a temporary directory that will be removed after the embedded script's execution. The files will then be extracted in the current working directory and will stay here until you remove them.
 
 + --noexec : Do not run the embedded script after extraction.
 
