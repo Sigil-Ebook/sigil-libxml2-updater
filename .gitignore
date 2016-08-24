@@ -1,0 +1,17 @@
+*.DS_Store
+
+# Vim temp/swap files
+*~
+*.swp
+*.swo
+
+# Translations
+*.mo
+*.pot
+
+*.log
+
+*.ini
+
+# makeself binary archives files (updater releases)
+*.run
