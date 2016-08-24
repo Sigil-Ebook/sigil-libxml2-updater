@@ -11,6 +11,8 @@ Running ./makeupdater.sh will create the installer, which can then be used to up
 
 Download the latest installer from:
 
+[https://github.com/Sigil-Ebook/sigil-libxml2-updater/releases/latest](https://github.com/Sigil-Ebook/sigil-libxml2-updater/releases/latest)
+
 Make sure its executable bit is set and run it (as sudo/su) from the command line:
 
 > `sudo ./sigil_libxml2_update.run`
